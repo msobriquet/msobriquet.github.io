@@ -1,0 +1,93 @@
+:root {
+    color: aliceblue;
+}
+
+@font-face {
+    font-family: 'IGS VGA 8x16';
+    src: url("fonts/Web437_IGS_VGA_8x16.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cordata PCC-400';
+    src: url("fonts/WebPlus_Cordata_PPC-400.woff");
+}
+
+h1 {
+    text-align: center;
+}
+
+a.title{
+    text-decoration: none;
+}
+
+#main-title{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav ul {
+    text-align: center;
+    list-style-type: none
+}
+
+div.container { /* have to define height for position:sticky to work for sidebar*/
+    display: flex;
+    height: 120vh; 
+}
+
+main {
+    flex: 1;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+
+body {
+    font-family: 'IGS VGA 8x16';    
+    background-image: url("assets/space.gif");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+    
+article {
+    padding: 20px;
+}
+
+p {
+    font-family: 'Cordata PCC-400';
+}
+
+blockquote {
+    font-family: 'Cordata PCC-400';
+    font-style: italic;
+}
+
+/* sidebar */
+
+aside {
+    height: 70%; /* 70% of .container height*/
+    width: 150px;
+    position: sticky; /* sticks to the top of .container*/
+    top: 0;
+    margin-top: 0px;
+    padding-top: 5px;
+    background-color: rgb(45, 52, 80);
+}
+
+aside div {
+    padding: 8px;
+    display: block; /* display one below the other */
+}
+
+footer {
+    margin-left: 150px;
+    padding-left: 20px;
+}
+
+iframe {
+    margin-left:-9999 px;
+    }

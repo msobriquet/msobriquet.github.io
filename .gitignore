@@ -1,0 +1,24 @@
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+venv/
+.env/
+
+# Flask configurations
+instance/
+
+# SQLite database files
+*.db
+*.sqlite
+
+# IDE/Editor folders
+.vscode/
+.idea/
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
