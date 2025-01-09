@@ -22,3 +22,7 @@ instance/
 # OS-specific files
 .DS_Store
 Thumbs.db
+
+#font files
+styles/fonts/oldschool_pc_font_pack_v2.2_web.zip
+styles/fonts/oldschool_pc_font_pack_v2.2_web/
