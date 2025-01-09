@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            #container{
+                position: relative;
+            }
+            #background {
+                background-color: rgb(19, 19, 19);
+                position: absolute;
+            }
+            #overlay {
+                position: absolute;
+                color: aliceblue;
+            }
+            html, body {
+                width:  100%;
+                height: 100%;
+                margin: 0;
+            }
+            p {
+                background-color: aliceblue;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <canvas id="background" width></canvas>
+            <div id="overlay">
+                <!-- <h2>
+                    //INSERT OVERLAY TEXT HERE
+                </h2> -->
+            </div>
+        </div>  
+
+        <script>
+            const canvas = document.getElementById('background');
+            const ctx = canvas.getContext("2d");
+
+            ctx.canvas.width  = window.innerWidth;
+            ctx.canvas.height = window.innerHeight;
+
+            
+
+            function star(){
+                let theta = Math.random() * 2 * Math.PI;
+                let r = 50 + Math.random() * 400;
+                let x = Math.cos(theta) * r;
+                let y = Math.sin(theta) * r;
+                let size = Math.random() * 10;
+
+                return [x,y,size];
+            }
+            let stars = [];
+            function rollStars(){
+                ctx.fillStyle = '#111'
+                ctx.fillRect(0,0,10000,10000);
+                stars = [];
+                for (let c = 0; c < 50; c++) stars.push(star());
+            }
+            rollStars();
+            
+            function drawStar(star){
+                ctx.fillStyle = '#fff'
+                ctx.fillRect(star[0],star[1],star[2],star[2]);
+            }
+
+            function drawStars(){
+                for (let i = 0; i < stars.length; i++) drawStar(stars[i]);
+
+                ctx.restore();
+            }       
+
+            ctx.translate(window.innerWidth/2,window.innerHeight/2);
+            let scalefactor = 1.001;
+
+
+            let space = false;
+            document.onkeydown = e => {
+                space = true;
+            }
+            document.onkeyup = e => {
+                space = false;
+            }
+
+            ctx.save();
+            setInterval(()=>{
+                if (space) {ctx.restore(); ctx.save();}
+                ctx.scale(scalefactor,scalefactor);
+                drawStars();
+            },10);
+        </script>
+    </body>
+</html>
