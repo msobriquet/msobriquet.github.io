@@ -10,7 +10,7 @@ header.innerHTML = `
 <ul>
     <li><a class ="title" href="about.html">ABOUT</a></li>
     <li><a class ="title" href="#">BLOG</a></li>
-    <li><a class ="title" href="#">WRITING</a></li>
+    <li><a class ="title" href="writing-home.html">WRITINGS</a></li>
     <li><a class ="title" href="books.html">BOOKS</a></li>
     <li><a class ="title" href="canvas-stars.html">GAMES</a></li>
 </ul>

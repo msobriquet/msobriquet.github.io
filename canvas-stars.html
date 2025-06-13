@@ -8,7 +8,7 @@
                 position: relative;
             }
             #background {
-                background-color: rgb(19, 19, 19);
+                background-color: rgb(91, 199, 199);
                 position: absolute;
             }
             #overlay {
@@ -49,13 +49,14 @@
 
             function star(){
                 let theta = Math.random() * 2 * Math.PI;
-                let r = 50 + Math.random() * 400;
+                let r = 50 + Math.random() * 400; 
                 let x = Math.cos(theta) * r;
                 let y = Math.sin(theta) * r;
                 let size = Math.random() * 10;
 
                 return [x,y,size];
             }
+            
             let stars = [];
             function rollStars(){
                 ctx.fillStyle = '#111'
