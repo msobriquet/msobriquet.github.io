@@ -10,24 +10,134 @@
 
         <link rel="icon" href="styles/assets/spider.gif" type="image/x-icon" />
         <link rel="stylesheet" href="styles/style.css" />
+        <style>
+            /* root */
+            /* font */
+            /* body */
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'IGS VGA 8x16';    
+                background-image: url("styles/assets/background.png");
+                background-size: cover;
+                background-position: center;
+                
+            }
+
+            #text p {
+                color: #0fe020;
+            }
+
+            .circle p {
+                position: absolute;
+                text-align: center;
+                line-height: 1.2;
+            }
+
+            #one p {
+                height: 280px;
+                width: 340px;
+                margin-left: 160px;
+                margin-top: 350px;
+            }
+
+            #two p {
+                height: 100px;
+                width: 250px;
+                margin-left: 1020px;
+                margin-top: 670px;
+            }
+
+            #three p {
+                height: 100px;
+                width: 250px;
+                margin-left: 320px;
+                margin-top: 50px;
+            }
+
+            #four p {
+                height: 100px;
+                width: 250px;
+                margin-left: 960px;
+                margin-top: 20px;
+            }
+
+            h1 {
+                color: rgb(228, 213, 162);
+                font-size: 100px;
+                position: absolute;
+                margin-left: 20px;
+                margin-top: 130px;
+                text-shadow: 1px 1px 3px black;
+                animation: vibration 0.1s infinite linear;
+            }
+
+            a {
+                color:#e0270f
+            }
+
+            @keyframes vibration {
+                0% {
+                    transform: translate(-1px, -1px);
+                }
+                25% {
+                    transform: translate(1px, -1px);
+                }
+                50% {
+                    transform: translate(1px, 1px);
+                }
+                75% {
+                    transform: translate(-1px, 1px);
+                }
+                100% {
+                    transform: translate(-1px, -1px);
+                }
+            }
+        </style>
     </head>
     <body class="aboutme">
         <header id="header-sec"></header>
-        <div class="container">
-            <!-- could add title here? -->
-            <p>
-                Hey! Welcome to my little mind palace. I'm currently a college student, originally studying linguistics, then computer science,
-                and now mainly math. I've found that I am not satisfied until I know how things tick, and to that end I am endlessly curious, which
-                can also be overwhelming at times. I feel much more grounded when I communicate the gaps in my knowledge, where my interests
-                are taking me, and personal (and often poetic) reflections. Hence, this website now exists as a fun way to coalate these thoughts,
-                since I simply cannot handle social media (see: overwhelm). First and foremost, this is a place for me to mess around and satisfy my whims, but I hope
-                you enjoy your time here!  <br>
-                <br> 
 
-                If you have any thoughts on anything I've written that you'd like to chat about, feel free to <a href="mailto:danir8228@gmail.com">email me!</a> 
-            </p>
-        </div class="container">
+        <div id="text">
 
-        <footer id="footer-sec"></footer>
+            <h1>
+                little mind palace. 
+            </h1>
+
+            <div class="circle" id="one">
+                <p>
+                    I'm currently a college student, originally studying linguistics, then computer science,
+                    and now mainly math. I've found that I am not satisfied until I know how things tick, and to that end I am endlessly curious, which
+                    can also be overwhelming at times. I feel much more grounded when I communicate the gaps in my knowledge, where my interests
+                    are taking me, and personal (and often poetic) reflections. Hence, this website now exists as a fun way to coalate these thoughts,
+                    since I simply cannot handle social media (see: overwhelm). First and foremost, this is a place for me to mess around and satisfy my whims, but I hope
+                    you enjoy your time here!  <br>
+                    <br> 
+                </p>
+            </div>
+
+            <div class="circle" id="two">
+                <p>
+                    If you have any thoughts on anything I've written that you'd like to chat about, feel free to <a href="mailto:danir8228@gmail.com">email me</a>! 
+                </p>
+            </div>
+
+            <div class="circle" id="three">
+                <p>
+                    <strong>hello websurfers!</strong> <br> Welcome to my
+                </p>
+            </div>
+
+            <div class="circle" id="four">
+                <p>
+                    <a href="index.html">↩</a> Back to home, please!
+                </p>
+            </div>
+        </div>    
+
+
+        <!-- <footer id="footer-sec"></footer> -->
     </body>
 </html>

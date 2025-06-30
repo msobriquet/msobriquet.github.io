@@ -1,4 +1,16 @@
-<!-- ok it needs to be like homes-->
+<!-- ok it needs to be like homes-
+    
+1. changing fonts text
+- which fonts
+-js to animate?
+2. moving roof to house
+-make a gif or js?
+3. opening door upon hover
+- door asset?
+5. running gif
+6. background img
+- fill to overflow
+ -->
 
 <!DOCTYPE html>
 
@@ -18,6 +30,7 @@
             #background {
                 background-color: rgb(97, 165, 183);
                 position: absolute;
+
             }
             #overlay {
                 position: absolute;
@@ -28,7 +41,7 @@
                 height: 100%;
                 margin: 0;
                 padding: 0;
-                overflow: hidden;
+                overflow: auto;
             }
             p {
                 background-color: aliceblue;
@@ -36,13 +49,34 @@
                 width: 30px;
                 height: 30px;
             }
+
+            h1 {
+                transform: scaleX(0.5);
+                font-size: 120px;
+            }
+
+            #door {
+                height: 100px;
+                width: 100px;
+                margin-left: 1500px;
+            }
         </style>
     </head>
 
     <body>
         <div class="container">
             <canvas id="background" ></canvas>
-            <a> </a>
+            <div id="overlay">
+                <div id="image-link">
+                    <h1>
+                        RUN
+                    </h1>
+                    <a href="homepost.html">
+                        <img id="door" src="styles/assets/door.JPG">
+                    </a>
+    
+                </div>
+            </div>
         </div>
 
         <script>
@@ -62,12 +96,11 @@
             }
             gradient();
 
+            function redirect() {
+                
+            }
 
-        
-            // function pixel() {
-
-            // }
-
+            
 
         </script>
 

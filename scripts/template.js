@@ -12,7 +12,7 @@ header.innerHTML = `
     <li><a class ="title" href="#">BLOG</a></li>
     <li><a class ="title" href="writing-home.html">WRITINGS</a></li>
     <li><a class ="title" href="books.html">BOOKS</a></li>
-    <li><a class ="title" href="canvas-stars.html">GAMES</a></li>
+    <li><a class ="title" href="https://msobriquet.itch.io/heist">GAMES</a></li>
 </ul>
 </nav>
 `;

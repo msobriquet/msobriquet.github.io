@@ -14,11 +14,6 @@
     src: url("fonts/WebPlus_Cordata_PPC-400.woff");
 }
 
-/*just the about me page*/
-.aboutme {
-    color:blueviolet;
-} 
-
 h1 {
     text-align: center;
 }
@@ -39,7 +34,7 @@ nav ul {
 
 div.container { /* have to define height for position:sticky to work for sidebar*/
     display: flex;
-    height: 120vh; 
+    /* height: 120vh;  */
 }
 
 main {
@@ -47,6 +42,10 @@ main {
     margin-left: 10px;
     padding-left: 20px;
 }
+
+/* a {
+    color:brown;
+} */
 
 body {
     font-family: 'IGS VGA 8x16';    
@@ -76,7 +75,7 @@ blockquote {
 aside {
     height: 70%; /* 70% of .container height*/
     width: 150px;
-    position: sticky; /* sticks to the top of .container*/
+    position: absolute; /* sticks to the top of .container if you use "sticky" keyword*/
     top: 0;
     margin-top: 0px;
     padding-top: 5px;
@@ -89,7 +88,8 @@ aside div {
 }
 
 footer {
-    margin-left: 150px;
+    text-align: center;
+    margin-left: 20px;
     padding-left: 20px;
 }
 
