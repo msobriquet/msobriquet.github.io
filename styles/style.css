@@ -14,37 +14,49 @@
     src: url("fonts/WebPlus_Cordata_PPC-400.woff");
 }
 
-h1 {
+/* #header-sec {
+    margin-top: 5%;
+} */
+
+/*TITLE*/
+/*center website title "paraphernalia
+it needs to target h1*/
+#main-title {
+    display:block;
+    width: 100%;
     text-align: center;
 }
 
-a.title{
-    text-decoration: none;
-}
-
-#main-title{
-    text-decoration: none;
+/*taking precedence over the a div rule*/
+#main-title a {
     color: aliceblue;
+    text-decoration: none;
+    font-size: 35px;
 }
 
-nav ul {
+/* HOME NAV BAR */
+#header-sec ul {
     text-align: center;
-    list-style-type: none
-}
+    list-style-type: none;
+    padding-left: 0%; /* no idea why it was randomly adding that*/ 
+} 
 
-div.container { /* have to define height for position:sticky to work for sidebar*/
+.title {
+    color:blueviolet;
+    text-decoration: none;
+} 
+
+
+/*not using this for now*/
+/* div.container { /* have to define height for position:sticky to work for sidebar
     display: flex;
-    /* height: 120vh;  */
-}
+    /* height: 120vh;  
+} */
 
-main {
-    flex: 1;
+/* main {
+    flex: 1; 
     margin-left: 10px;
     padding-left: 20px;
-}
-
-/* a {
-    color:brown;
 } */
 
 body {
@@ -89,8 +101,6 @@ aside div {
 
 footer {
     text-align: center;
-    margin-left: 20px;
-    padding-left: 20px;
 }
 
 iframe {

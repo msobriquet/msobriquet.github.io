@@ -24,3 +24,16 @@ text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3)
 make text go around objectr
 flames italic font lol
 https://codepen.io/bosworthco/pen/RjBvgw
+
+-flex?? 
+
+<h2>TODO</h2>
+                        <li>music!</li>
+                        <li>toki pona translation</li>
+                        <li>minigames!</li>
+                        <li>comments</li>
+                        <li>hexchat (IRC)</li>
+                        <li>dark mode!</li>
+                        <li>code font with code tag</li>
+
+                        

@@ -1,19 +1,19 @@
 //create element (object) of type template named header
 const header = document.createElement('template');
 header.innerHTML = `
-<h1>
-    <a id="main-title" href="index.html"> 
-    ≥w≤ paraphernalia ≥w≤ 
+<h1 id="main-title">
+    <a href="index.html"> 
+        ≥w≤ paraphernalia ≥w≤ 
     </a>
 </h1>
-<nav>
-<ul>
-    <li><a class ="title" href="about.html">ABOUT</a></li>
-    <li><a class ="title" href="#">BLOG</a></li>
-    <li><a class ="title" href="writing-home.html">WRITINGS</a></li>
-    <li><a class ="title" href="books.html">BOOKS</a></li>
-    <li><a class ="title" href="https://msobriquet.itch.io/heist">GAMES</a></li>
-</ul>
+<nav id="home">
+    <ul>
+        <li><a class ="title" href="about.html">ABOUT</a></li>
+        <li><a class ="title" href="blog-home.html">BLOG</a></li>
+        <li><a class ="title" href="writing-home.html">WRITINGS</a></li>
+        <li><a class ="title" href="books.html">BOOKS</a></li>
+        <li><a class ="title" href="https://msobriquet.itch.io/heist">GAMES</a></li>
+    </ul>
 </nav>
 `;
 document.getElementById("header-sec").appendChild(header.content);
