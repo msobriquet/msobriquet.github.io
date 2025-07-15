@@ -16,12 +16,12 @@
 
 <html>
     <head>
-        <!-- <meta charset="utf-8" />
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
 
-        <title>writinghome</title>
+        <title>writing-home</title>
 
-        <link rel="icon" href="styles/assets/spider.gif" type="image/x-icon" /> -->
+        <link rel="icon" href="styles/assets/spider.gif" type="image/x-icon" />
 
         <style>
             .container{ 
@@ -46,6 +46,12 @@
 
             p {
                 font-size: 30vw;
+            }
+
+            h2 {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin-top: 50vw;
+                margin-left: 2vw;
             }
 
             .font1 p {
@@ -75,9 +81,12 @@
         <div class="container">
             <div id="overlay">
                 <div id="image-link">
+                    <h2>
+                        don't be scared...
+                    </h2>
                     <h1 class="font1">
                         <p>
-                            RUN.
+                            look around.
                         </p>
                     </h1>
                     <!-- <img src="styles/assets/running.gif"> -->
@@ -98,7 +107,7 @@
                 body.classList.remove(fonts[index]);
                 index = (index + 1) % fonts.length;
                 body.classList.add(fonts[index]);
-            }, 2000)
+            }, 500)
 
         </script>
 

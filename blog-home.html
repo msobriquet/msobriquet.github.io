@@ -11,16 +11,22 @@
         <link rel="icon" href="styles/assets/spider.gif" type="image/x-icon" />
         <link rel="stylesheet" href="styles/style.css" />
         <style>
-            /* root */
+            /* root 79, 44, 15*/
             /* font */
             /* body */
+
+            @font-face {
+                font-family:'HP_100LX_16x12';
+                src: url("styles/fonts/Web437_HP_100LX_16x12.woff") format(woff);
+            }
+
             * {
                 box-sizing: border-box;
             }
 
-            body {
-                font-family: 'IGS VGA 8x16';    
-                background-image: url("styles/assets/pixels2.png");
+            body {  
+                background-image: url("styles/assets/greenback3.png");
+                background-size: 80%;
                 background-repeat: repeat;
                 overflow: auto;
             }
@@ -31,57 +37,123 @@
                 opacity: .6;
             }
 
-            #text p {
-                color: #0fe020;
-            }
-
-            h1 {
-                font-size: 100px;
-                position: absolute;
+            .header {
+                font-family: 'HP_100LX_16x12';
+                font-size: 70px;
+                text-align: center;
+                position: relative;
                 animation: vibration 0.1s infinite linear;
+                padding: 15 vw;
             }
 
-            .chunk-border {
-                border-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAVKADAAQAAAABAAAAVAAAAAC3aM1AAAACHklEQVR4Ae3awXaDMAxEUdL//+e22YEOMIw1Jk3zuoojWbGvjU4XPJb833e+5NSKj2T1r2Qxai0LoOFbAGgYNNE/3q1nKsKWCTdU8ZpxQE0wlQ6oEjLjI/2i2zNHftPc1ib91vVyQzf2/QGgfcNNBUA3HP3BlX52aw/qb0lWmLofbqj09xIA9bxkNqCSyEvY66FTe4y3vFuyo/vlhobPDFBAwwLhcs8eGu0h4fW9olzLg0c+fGSAAhoWCJcb6aF7/7uGl/Wnylk9lUc+fHaAAhoWCJe70kM/rWcq4tOeyiOv+Mw4oCaYSgdUCZlxQE0wlQ6oEjLjgJpgKh1QJWTGATXBVDqgSsiMA2qCqXRAlZAZB9QEU+mAKiEzDqgJptIBVUJmHFATTKUDqoTMOKAmmEoHVAmZcUBNMJUOqBIy44CaYCodUCVkxgE1wVQ6oErIjANqgql0QJWQGb/yblMt+WnvOp2+y1RxuKFVpDkGtAlYpwNaRZrjkR5af/K/9VSrZ1YMbmgVaY4BbQLW6YBWkeZ4r/+1esjvevZqNpc5dXp0v9zQ8FkBCmhYIFzuSr+L9pjw+kfKTd0Pj/zIkZzMAfQEZyQE6IjayZwrPbROn9qD6o8FxreulxsaOLF1CUDXGoHPgAYQ1yVGeuh6/vNzt0fVeq8et0y4oeHjAxTQsEC4XKtfHKzl3Xpq1IBH/uBWjH4N6KjcwTxAD2BGv/4B8YAalf7ZZtcAAAAASUVORK5CYII=') 28 /  28px / 0 round;
+            #back-button {
+                position: absolute;
+                margin-left: 10px;
+                margin-top: 2px;
+                
+            }
+
+            .brownie {
+                border-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAB90lEQVR4Xu3cwVHDMABEUacCGqEXaqUXGqECOEvMsLOjb+OIz9VhLT2vRBwPeRz+oAIPNM2wQ1C4BIIKCgvAcTZUUFgAjrOh/w307fXla2XO7x+fQ2navPn301hu39AWYJ6woJOIoGlNlMe3A/3rCZX+P15+uyUv6PhHLV3g+EdJUEGHErnkw5pq3xemJZpWYHu+p1vy7QQFtaG/C6zuYenOJzUwHb/dkqeXYAKgjwsKiwoqKCwAx13eUHj828fF96HbC8ATFFRQWACOiw2lN214/Mtx9PwEDQ8B2xsXQQVdXuVDgEue9TwEFRQWgONsqKCwABxnQwWFBeA4G7o76NkP0WC/H3Gpoe38lm892xOeDdTmC9qKhdcL+uyg8/jTFW0/7oJ9luNW5xf3UEFHgVQYQafG2NDlRT4GCCooLADH2VBBYQE4zoYKCgvAcTZUUFgAjru8ofD4t4urbz23E4AnJKigsAAcVzd0ddOGx4/Hrc5PUD++w0s5BNpQ2Hd70DTB5Hn1P+/efg8VdPomr9SgdFxQQVNHuodYcxq9h3WjPQ76/Jc/Rha0vOTtnkY3pByuDW3B0uvpC7rdkk8TSsBnH8ffh569hwq6+A2z6QKd3bg234a2YuH1NSh8/u3iBIUvqaCCwgJwnA0VFBaA42yooLAAHPcNDg8gc2djkpQAAAAASUVORK5CYII=') 28 /  28px / 0 round;
                 border-width:  28px;
                 border-style:  solid; 
-                background-color: rgba(17, 177, 124, 0.286);
-                margin: 2vw;
+                background-color: rgba(125, 80, 11, 0.7);
+                padding: 5px 20px;
             }
-  
+
+            .brownie2 {
+                border-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAACRElEQVR4Xu2c223DMBAE7X7SS2pNL+kn/o1oQIMFVwfBGP/uiY/lHHmWJT8ffqoOPKut2dhDQ8sQaOjdDP3+evz9H9PP75F60svzeWuO+ic9Hd82oTQg0tMBp/HUP+lpfxoKGaahiwNEIOl1Q9cO0w4+LX49I9b5Ycpr6NEyDS2niIbe3dC0zmxv+qk/1P+uvr2Hauj51/X4UNJQDd36akxbAqa8ZVK2S68Z+5byGqqhmQPlaAmdNnTtjzblXb08v/r9UJofHkoauneD3Dq0/IuDhl5t6NVlE92tae+p0/MZr0M1tIyMhmroqQNY2LfLpvJ61JujOpP08Tq07kC5QTKMdA29+Gfmy+vQMlD15ohA0iVUQutQHhokAkmXUAmVUDzorrUoa51SmnRT3pTPiEujiUDSJVRCU+ayeCKQdAmV0Iy4NJoIJF1CJTRlLosnAkmXUAnNiEujiUDSJVRCU+ayeCKQdAmV0Iy4NJoIJF1CJTRlLosnAkmXUAnNiEujiUDSJXSa0OnnKVOi0vjp+fh8aLpCSzw+fTe9opvzwcun5yOhuCTnAUjoejmdcrv65nzw8t3x0fXjp3w6IHQoDKD+d3UNDf/5jAzX0GlDrz4Vw4y9fTgeShqaraGGZn5htIaiRVkAGmod6uvdp0hR2bOrWzZNl02m/HDKZ1v250XT29T4goF16REKDS0niYbezVAaT7vsoP5SfXp8uIfSBKYHTONpVylpfxrq/9hnzExn0Dah2fQ+P1pDy2usoRpadqDc3As89DCCRYyzWgAAAABJRU5ErkJggg==') 28 /  28px / 0 round;
+                border-width:  28px;
+                border-style:  solid; 
+                background-color: rgba(125, 80, 11, 0.7);
+                padding: 5px 20px;
+                margin-bottom: 2vw;
+            }
+
+            main {
+                margin: 20px 50px;
+            }
+
+            h2 {
+                color: rgb(248, 248, 249);
+                font-family: 'HP_100LX_16x12';
+            }
+
+            time {
+                color:rgb(186, 161, 141);
+            }
+
+            #link {
+                color:rgb(204, 239, 189);
+            }
+
 
         </style>
     </head>
     <body>
-        <header>
+        <div class="brownie2" id="back-button">
+            <a id="link" href="index.html">
+                ↩ take me home!
+            </a>
+        </div>
+        <a href="index.html">
+            -
+        </a>
 
-        </header>
-        <div>
-            <p>
-                The dots cuagulate and merge, ants in a random dance, 
-            </p>
-        </div>
-        <div class="chunk-border">
-            <div class="post">
-                <p>
-                    Hello oh my god i love to blog lolllll
-                    Hello oh my god i love to blog lolllll
+        <header>
+            <h1>
+                <p class="header">
+                    ~ <br> thoughts + happenings  <br> <br> ~
                 </p>
-            </div>
-        </div>
-        <div class="chunk-border">
-            <div class="post">
-                Hello oh my god i love to blog lolllllHello oh my god i love to blog lolllll
-                Hello oh my god i love to blog lolllll
-            </div>
-        </div>
-        <div class="chunk-border">
-            <div class="post">
-                Hello oh my god i love to blog lolllll
-                Hello oh my god i love to blog lolllll
-            </div>
-        </div>
+            </h1>
+        </header>
         
-        
+        <main>
+            <div class="brownie2">
+               <article>
+                <h2>
+                    permission
+                </h2>
+                <time datetime="2025-07-12"> Saturday, 12 July 2025</time>
+                <div class="content">
+                    <p>
+                        I'm cringe. I constantly feel things that others have felt before me, that people are feeling in this current moment.
+                        My instinct is to express myself--I've written poems, fanfiction, journal entries, essays, letters--but it always comes with
+                        the undercurrent of illegitimacy, of impropriety, a tradesman's scam, a jester's trick revealed. <br>
+                        <br>
+
+                        In a capitalist society, how dare I create what has already been created, more eloquently, more succinctly than I 
+                        could? As a matter of fact, how dare I spend the time to create in the first place, in a dying medium, incapable of the 
+                        virality that has become our measure of success? <br>
+                        <br>
+
+                        When I run, when I climb, when I open my eyes in the morning and watch the sun trace a path on my bedroom wall, I'm repeating 
+                        what thousands of people have done before me, and usually, I'm repeating myself. And yet, we all--aspirationally, maybe--find 
+                        beauty, if not purpose, in the minutia of living. Most of us consciously search for retellings even, whether just for validation
+                        or to further digest common themes, to make slightly different decisions and hopefully, live slightly happier lives. Our 
+                        individualistic societal values, the zero-sum game we've created, is incompatible with the collectivist desires that fuel real 
+                        prosperity. I won't say they're innate, as many people I've known have contradicted that, but we evolved to embrace community; 
+                        our strength, and happiness, comes from feeling more connected, from working together and sharing our lives. <br>
+                        <br>
+                        
+                        I've tried to be a better person and felt selfish, and tried to better the world and felt empty. My standards were someone else's. 
+                        I felt watched, judged in my own home, performative. Because creating anything wanting 'success' is performative. I'm tired of 
+                        feeling guilty for doing what I love. <br>
+                        <br>
+
+                        I love an extended metaphor, a thematic story, a resurfaced memory--more than anything, I love to feel. It might be the 
+                        only thing that we still have in common. Sometimes, it's the only thing that feels real at all. <br>
+                        <br>
+                        Welcome to a place you used to know well. A place you buried, and then romanticized, only acknowledged when strict conditions
+                        of secrecy, of anonymity, distance of hindsight or foresight further tint the glasses. Take a deep breath and wipe the dust off 
+                        the counter; you're moving in for good this time.  
+                    </p>
+                </div>
+               </article>
+            </div>
+
+
+        </main>
+
     </body>
 </html>

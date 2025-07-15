@@ -11,7 +11,12 @@
 
 @font-face {
     font-family: 'Cordata PCC-400';
-    src: url("fonts/WebPlus_Cordata_PPC-400.woff");
+    src: url("fonts/WebPlus_Cordata_PPC-400.woff") format('woff');
+}
+
+@font-face {
+    font-family: Web437 Nix8810 M15;
+    src: url("fonts/Web437_Nix8810_M15.woff") format('woff');
 }
 
 /* #header-sec {
@@ -31,7 +36,7 @@ it needs to target h1*/
 #main-title a {
     color: aliceblue;
     text-decoration: none;
-    font-size: 35px;
+    font-size: 50px;
 }
 
 /* HOME NAV BAR */
@@ -39,6 +44,7 @@ it needs to target h1*/
     text-align: center;
     list-style-type: none;
     padding-left: 0%; /* no idea why it was randomly adding that*/ 
+    font-size: 20px;
 } 
 
 .title {
@@ -60,9 +66,8 @@ it needs to target h1*/
 } */
 
 body {
-    font-family: 'IGS VGA 8x16';    
+    font-family: 'Web437 Nix8810 M15';    
     background-image: url("assets/space.gif");
-
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -75,6 +80,10 @@ article {
 
 p {
     font-family: 'Cordata PCC-400';
+}
+
+a {
+    color:rgb(180, 153, 217);
 }
 
 blockquote {
