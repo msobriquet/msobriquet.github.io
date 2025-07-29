@@ -25,16 +25,36 @@
                 margin-top: 0%;
             }
 
+            #prism {
+                position: absolute;
+                margin-left: 80%;
+                margin-top: 10vw;
+                width: 30px;
+                height: 30px;
+                
+            }
+
             .michael-cain-keech {
                 border-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAVKADAAQAAAABAAAAVAAAAAC3aM1AAAAC5klEQVR4Ae2aQXKcUAxE41Tuf2VnSM0CPajfiJZn7FR7hZDUEo9P1yz88ev7/31ixQ/Erw6X+/x+9Tb/+7wAHX7DAToMdPMjegJHvNqz1D5fvZ81PyeUr8eMA9QEyPYAJREzPvNHy0PMfbZ2zueOKt9dgXqqn/uU+pzQgsMPAtRnWBQCtODwgz83JOghyoPcerUi53Me+9166pU4J7Tg8IMA9RkWhQAtOPxA+c02oes53Er1qzz1GLOfecbqmamn6ot+TmjB4QcB6jMsCgFacPjBld+h9JCux7j97lNyvqu37M8JXeLpJwO0z2zZEaBLPP3kFQ+lKj2p66nUc2O1j9If3T8nVOFu5gO0CUyVB6gi1MzTf5rt/8rpQUpjYqaasc+r/bgP65nfax+uc0IPSLwbAerxO3QH6AGJd6PlD89R9Bi1wZ0ZSnMyr56ntX9O6OSreWgFaIAOExiWO/MH5Slc4UyDNT85VjzK8+eTH37VARqgwwSG5bbvv+URw/N/otySVz754VcaoAE6TGBYrvyGemovPeJRc9YzvNZb5dTzc7nCI5888ZhxgJoA2R6gJGLG5fu/qKU85o7mxdEjZWp/Dmk9T04o8ZlxgJoA2R6gJGLGd/63iSPpMcqjWE+96Vjtw3nWfjmhxGnGAWoCZHuAkogZW37xnE2PUprd+u4jdvW79ct9ckKXePrJAO0zW3YE6BJPP3nnd+io5zxWntbrUqDnW/vkhHbxi/oAFYC66QDtEhP1dzxUSB7S9KRDgXmD+q4nWv05oebbZHuAkogZB6gJkO30C+a3WHkUe9x66qkdOU/1f2l9Tijxm3GAmgDZHqAkYsbKnzZ55Tlc4Yome/Yx51FP5fdad66przTKfjmhClczH6BNYKo8QBWhZr58/89ey0Oa88/K3z3/bKf9veV+OaF7VAPXAToAcS8RoHsaA9dXPPSsZmD0ZQl61rv3WS6eE7rE008GaJ/ZsiNAl3j6yb/IH0GqR2QHMAAAAABJRU5ErkJggg==') 28 /  28px / 0 round;
                 border-width:  28px;
                 border-style:  solid; 
             }
 
-            .container{
+            .shadow {
                 background-color: rgb(138, 43, 226, 0.6);
+                margin: 50px;
+                margin-left: 300px;
+                padding: 20px;
             }
-            
+
+            .text {
+                margin-top: 40px;
+                margin-left: 80px;
+            }
+
+            #guestbook {
+                position: ce;
+            }
   
         </style>
         
@@ -44,17 +64,48 @@
             <img src="styles/assets/bouncecar.webp">
         </a>
 
+        <a id="prism" href="inspo.html">
+            <img src="styles/assets/pentagrammic-antiprism.webp">
+        </a>
+
         <header id="header-sec"></header>
         
         <main>
-            <div class="container">
+            <div class="shadow">
+                <div class="text">
+                    <h1>
+                        current obsessions
+                    </h1>
 
+                    <p>
+                        bookssss, <br>
+                        movies
+                    </p>
+
+                </div>
             </div>
+
+            <!-- <div class="border">
+                <h1>
+                    current obsessions
+                </h1>
+
+                <p>
+                    bookssss, <br>
+                    movies
+                </p>
+            </div> -->
         </main>
+
+       <p align="center">
+        <iframe id="guestbook" src="https://msobriquet.atabook.org/" width="800" height="750">
+        </iframe>
+       </p>
 
         <footer id="footer-sec">
             <iframe id="player" src="https://www.youtube.com/embed/Cwo4mM9J0Oo?mute=0&autoplay=1&loop=1" 
             allow='autoplay' width="0" height="0"> </iframe>
         </footer>
+        
     </body>
 </html>
