@@ -13,9 +13,30 @@
         <script src="scripts/template.js" type="text/javascript" defer></script>
 
         <style>
-            #header-sec {
-                margin-top: 5%;
+            @font-face {
+                font-family:'HP_100LX_16x12';
+                src: url("styles/fonts/Web437_HP_100LX_16x12.woff") format(woff);
             }
+
+            @font-face {
+                font-family: 'IGS VGA 8x16';
+                src: url("fonts/Web437_IGS_VGA_8x16.woff") format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+
+            @font-face {
+                font-family: 'Nix8810 M15';
+                src: url("fonts/Web437_Nix8810_M15.woff") format('woff');
+            }
+
+
+        
+            #header-sec {
+                padding-top: 5%;
+            }
+
             body {
                 overflow: auto;
             }
@@ -27,17 +48,10 @@
 
             #prism {
                 position: absolute;
-                margin-left: 80%;
-                margin-top: 10vw;
-                width: 30px;
-                height: 30px;
-                
-            }
-
-            .michael-cain-keech {
-                border-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAVKADAAQAAAABAAAAVAAAAAC3aM1AAAAC5klEQVR4Ae2aQXKcUAxE41Tuf2VnSM0CPajfiJZn7FR7hZDUEo9P1yz88ev7/31ixQ/Erw6X+/x+9Tb/+7wAHX7DAToMdPMjegJHvNqz1D5fvZ81PyeUr8eMA9QEyPYAJREzPvNHy0PMfbZ2zueOKt9dgXqqn/uU+pzQgsMPAtRnWBQCtODwgz83JOghyoPcerUi53Me+9166pU4J7Tg8IMA9RkWhQAtOPxA+c02oes53Er1qzz1GLOfecbqmamn6ot+TmjB4QcB6jMsCgFacPjBld+h9JCux7j97lNyvqu37M8JXeLpJwO0z2zZEaBLPP3kFQ+lKj2p66nUc2O1j9If3T8nVOFu5gO0CUyVB6gi1MzTf5rt/8rpQUpjYqaasc+r/bgP65nfax+uc0IPSLwbAerxO3QH6AGJd6PlD89R9Bi1wZ0ZSnMyr56ntX9O6OSreWgFaIAOExiWO/MH5Slc4UyDNT85VjzK8+eTH37VARqgwwSG5bbvv+URw/N/otySVz754VcaoAE6TGBYrvyGemovPeJRc9YzvNZb5dTzc7nCI5888ZhxgJoA2R6gJGLG5fu/qKU85o7mxdEjZWp/Dmk9T04o8ZlxgJoA2R6gJGLGd/63iSPpMcqjWE+96Vjtw3nWfjmhxGnGAWoCZHuAkogZW37xnE2PUprd+u4jdvW79ct9ckKXePrJAO0zW3YE6BJPP3nnd+io5zxWntbrUqDnW/vkhHbxi/oAFYC66QDtEhP1dzxUSB7S9KRDgXmD+q4nWv05oebbZHuAkogZB6gJkO30C+a3WHkUe9x66qkdOU/1f2l9Tijxm3GAmgDZHqAkYsbKnzZ55Tlc4Yome/Yx51FP5fdad66przTKfjmhClczH6BNYKo8QBWhZr58/89ey0Oa88/K3z3/bKf9veV+OaF7VAPXAToAcS8RoHsaA9dXPPSsZmD0ZQl61rv3WS6eE7rE008GaJ/ZsiNAl3j6yb/IH0GqR2QHMAAAAABJRU5ErkJggg==') 28 /  28px / 0 round;
-                border-width:  28px;
-                border-style:  solid; 
+                margin-left: 75%;
+                margin-top: 2vw;
+                height: 14vw;
+                width: 14vw;
             }
 
             .shadow {
@@ -49,11 +63,8 @@
 
             .text {
                 margin-top: 40px;
-                margin-left: 80px;
-            }
-
-            #guestbook {
-                position: ce;
+                margin-left: 50px;
+                margin-right: 20px;
             }
   
         </style>
@@ -64,8 +75,8 @@
             <img src="styles/assets/bouncecar.webp">
         </a>
 
-        <a id="prism" href="inspo.html">
-            <img src="styles/assets/pentagrammic-antiprism.webp">
+        <a href="inspo.html">
+            <img id="prism" src="styles/assets/pentagrammic-antiprism.webp">
         </a>
 
         <header id="header-sec"></header>
@@ -74,33 +85,83 @@
             <div class="shadow">
                 <div class="text">
                     <h1>
-                        current obsessions
+                        <img style="height: 4.5vw;" src="styles/assets/book.gif">
+                        current reads
                     </h1>
 
-                    <p>
-                        bookssss, <br>
-                        movies
-                    </p>
-
+                    <div style="display: flex;">
+                        <div style="flex: 1; padding-right: 8px;">
+                            <p style="font-size: 20px;">
+                                <b>A Fine Balance </b> <br>
+                                <i>by Rohinton Mistry </i>
+                            </p>
+                            <p>
+                                An odyssey through late 20th century India, gazing at the rise of unchecked political corruption, 
+                                religious persecution, poverty, and pollution from the perspective of troubled yet hopeful protagonists
+                                tackling problem after problem, often with open distrust of each other considering the circumstances.
+                                I'm about halfway through and the constantly degrading quality of life, the straw that broke the camel's
+                                back being seemingly a page a way is pretty draining; I cannot imagine living through such a profound 
+                                loss of identity and helplessness to change a blatantly self-serving system. 
+                                
+                            </p>
+                        </div>
+                        <div style="flex: 1; padding-right: 8px; padding-left: 8px;">
+                            <p style="font-size: 20px;">
+                                <b>Unknown Quantity </b> <br>
+                                <i>by Rohinton Mistry </i>
+                            </p>
+                            <p>
+                                Fascinating tour through the invention of algebra, with individual chapters for group theory,
+                                linear algebra, ring theory, and algebraic geometry, the last of which I haven't read yet. 
+                                The primers are a great introduction to upper level math, by way of a few motivating examples 
+                                for each field. I particularly enjoyed the section on roots of unity, although I'm itching to 
+                                actually absorb the math; it's quite easy to lose the plot if you're not familiar with the rigorous
+                                definitions. Also, I have to mention even knowing very little about math history, you can tell from the 
+                                prose itself that the author is biased, most notably, referring to more prolific mathematicians as smarter 
+                                and better than less prolific ones, which he implies don't deserve to be as famous. 
+                                
+                            </p>
+                        </div>
+                        <div style="flex: 1; padding-left: 8px; padding-right: 8px;">
+                            <p style="font-size: 20px; ">
+                                <b>In the Palm of Your Hand </b> <br>
+                                <i>by Rohinton Mistry </i>
+                            </p>
+                            <p>
+                                Honestly, as someone who loves to write poetry, I struggle with the fact that I've read very little.
+                                It's another one of my countless interests that someday I'll find time to really dive headfirst into,
+                                but for now this book had been serving as a gentle introduction to the ethos behind poetry and why it 
+                                communicates emotion so well. I love the chapter-specific prompts, isolating one aspect to focus on
+                                when writing for yourself. I did take this book from one of my college's common rooms, but once I'm 
+                                finished I will definitely put it back; more students deserve to read this. 
+                                
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <!-- <div class="border">
-                <h1>
-                    current obsessions
-                </h1>
-
-                <p>
-                    bookssss, <br>
-                    movies
-                </p>
-            </div> -->
         </main>
 
-       <p align="center">
-        <iframe id="guestbook" src="https://msobriquet.atabook.org/" width="800" height="750">
-        </iframe>
-       </p>
+
+        <div style="display: flex;"> 
+            <!-- <div style=" margin: 10px; background-color: rgb(138, 43, 226, 0.6);">
+                <p>
+                    Honestly, as someone who loves to write poetry, I struggle with the fact that I've read very little.
+                    It's another one of my countless interests that someday I'll find time to really dive headfirst into,
+                    but for now this book had been serving as a gentle introduction to the ethos behind poetry and why it 
+                    communicates emotion so well. I love the chapter-specific prompts, isolating one aspect to focus on
+                    when writing for yourself. I did take this book from one of my college's common rooms, but once I'm 
+                    finished I will definitely put it back; more students deserve to read this. 
+                    
+                </p>
+            </div> -->
+            <div>
+                <p align="center">
+                    <iframe id="guestbook" src="https://msobriquet.atabook.org/" width="800" height="750">
+                    </iframe> 
+                </p>
+            </div> 
+        </div>
 
         <footer id="footer-sec">
             <iframe id="player" src="https://www.youtube.com/embed/Cwo4mM9J0Oo?mute=0&autoplay=1&loop=1" 

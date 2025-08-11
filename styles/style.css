@@ -15,7 +15,7 @@
 }
 
 @font-face {
-    font-family: Web437 Nix8810 M15;
+    font-family: 'Nix8810 M15';
     src: url("fonts/Web437_Nix8810_M15.woff") format('woff');
 }
 
@@ -66,7 +66,7 @@ it needs to target h1*/
 } */
 
 body {
-    font-family: 'Web437 Nix8810 M15';    
+    font-family: 'Nix8810 M15';    
     background-image: url("assets/space.gif");
     background-size: cover;
     background-repeat: no-repeat;
