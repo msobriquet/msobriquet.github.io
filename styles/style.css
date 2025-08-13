@@ -34,7 +34,7 @@ it needs to target h1*/
 
 /*taking precedence over the a div rule*/
 #main-title a {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 50px;
 }
