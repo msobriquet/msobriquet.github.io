@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="silly place for silly things in no particular order."/>
 
         <title>paraphernalia</title>
@@ -54,6 +54,11 @@
                 width: 14vw;
             }
 
+            #bookgif {
+                height: 100%; 
+                max-height: 4.5vw;
+            }
+
             .shadow {
                 background-color: rgb(138, 43, 226, 0.6);
                 margin: 50px;
@@ -65,6 +70,26 @@
                 margin-top: 40px;
                 margin-left: 50px;
                 margin-right: 20px;
+            }
+
+            #guestbook {
+                position: relative;
+                align-self: center;
+            }
+
+            .container {
+                display: flex;
+            }
+
+            .bookcolumn {
+                flex: 1; 
+                max-width: 400px;
+                width: 100%;
+                padding-right: 22px;
+            }
+
+            .book_titles {
+                font-size: 20px;
             }
   
         </style>
@@ -85,13 +110,13 @@
             <div class="shadow">
                 <div class="text">
                     <h1>
-                        <img style="height: 4.5vw;" src="styles/assets/book.gif">
+                        <img id="bookgif" src="styles/assets/book.gif">
                         current reads
                     </h1>
 
-                    <div style="display: flex;">
-                        <div style="flex: 1; padding-right: 8px;">
-                            <p style="font-size: 20px;">
+                    <div class="container">
+                        <div class="bookcolumn">
+                            <p class="book_titles">
                                 <b>A Fine Balance </b> <br>
                                 <i>by Rohinton Mistry </i>
                             </p>
@@ -105,8 +130,8 @@
                                 
                             </p>
                         </div>
-                        <div style="flex: 1; padding-right: 8px; padding-left: 8px;">
-                            <p style="font-size: 20px;">
+                        <div class="bookcolumn">
+                            <p class="book_titles">
                                 <b>Unknown Quantity </b> <br>
                                 <i>by Rohinton Mistry </i>
                             </p>
@@ -122,8 +147,8 @@
                                 
                             </p>
                         </div>
-                        <div style="flex: 1; padding-left: 8px; padding-right: 8px;">
-                            <p style="font-size: 20px; ">
+                        <div class="bookcolumn">
+                            <p class="book_titles">
                                 <b>In the Palm of Your Hand </b> <br>
                                 <i>by Rohinton Mistry </i>
                             </p>
@@ -143,21 +168,10 @@
         </main>
 
 
-        <div style="display: flex;"> 
-            <!-- <div style=" margin: 10px; background-color: rgb(138, 43, 226, 0.6);">
+        <div class="container"> 
+            <div id="guestbook">
                 <p>
-                    Honestly, as someone who loves to write poetry, I struggle with the fact that I've read very little.
-                    It's another one of my countless interests that someday I'll find time to really dive headfirst into,
-                    but for now this book had been serving as a gentle introduction to the ethos behind poetry and why it 
-                    communicates emotion so well. I love the chapter-specific prompts, isolating one aspect to focus on
-                    when writing for yourself. I did take this book from one of my college's common rooms, but once I'm 
-                    finished I will definitely put it back; more students deserve to read this. 
-                    
-                </p>
-            </div> -->
-            <div>
-                <p align="center">
-                    <iframe id="guestbook" src="https://msobriquet.atabook.org/" width="800" height="750">
+                    <iframe src="https://msobriquet.atabook.org/" width="800" height="750">
                     </iframe> 
                 </p>
             </div> 
@@ -167,6 +181,11 @@
             <iframe id="player" src="https://www.youtube.com/embed/Cwo4mM9J0Oo?mute=0&autoplay=1&loop=1" 
             allow='autoplay' width="0" height="0"> </iframe>
         </footer>
+
+        <p style="text-align: center;">
+            sites i love:
+        </p>
+
         
     </body>
 </html>
