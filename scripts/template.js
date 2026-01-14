@@ -23,7 +23,6 @@ footer.innerHTML = `
 <p>
     best viewed on pc. feel free to reuse any code!
 </p>
-<a href="mailto:danir8228@gmail.com">email me!</a>
 `;
 document.getElementById("footer-sec").appendChild(footer.content);
 
